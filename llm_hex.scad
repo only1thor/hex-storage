@@ -7,6 +7,6 @@ for (i = [0:2]) {
     for (j = [0:1]) {
         x = i * 2 * 30 + (j % 2) * 30;
         y = j * sqrt(3) * 30;
-        translate([x, y, 0]) hex_prism(50, 30);
+        translate([x, y, 0]) hex_prism(70, 30);
     }
 }
