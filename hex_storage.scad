@@ -1,7 +1,7 @@
 height = 80;
 radius = 45/2;
 wall_thickness = 1;
-number_of_sets = 2;
+number_of_sets = 4;
 
 module parameters_below_here_are_constant(){}
 apothem = radius*cos(180/6);
