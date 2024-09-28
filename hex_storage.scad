@@ -1,8 +1,8 @@
 height = 50;
 diameter = 32;
 wall_thickness = 1;
-number_in_x_axis = 2;
-number_in_y_axis = 2;
+number_in_x_axis = 4;
+number_in_y_axis = 4;
 
 module parameters_below_here_are_constant(){}
 radius = diameter / 2;
@@ -21,8 +21,8 @@ module hex_tube(Height, rad) {
 for (i = [0 : number_in_x_axis - 1]) {
 	for (j = [0 : number_in_y_axis - 1]) {
 		translate([
-			(apothem - wall_thickness / 2) * 2 * i + (radius - 2*wall_thickness)*(j % 2) ,
-			(radius + radius * cos(60)) * j - (wall_thickness)*(j % 2),
+			(apothem - wall_thickness / 2) * 2 * i + (radius - 2.5*wall_thickness)*(j % 2) ,
+			(radius + (radius - 2*wall_thickness) * cos(60)) * j - (wall_thickness),
 			 0])
 		hex_tube(height, radius);
 	}
