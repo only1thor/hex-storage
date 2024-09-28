@@ -1,9 +1,10 @@
-height = 80;
-radius = 45/2;
+height = 50;
+diameter = 32;
 wall_thickness = 1;
 number_of_sets = 4;
 
 module parameters_below_here_are_constant(){}
+radius=diameter/2;
 apothem = radius*cos(180/6);
 $fn=6;
 
